@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dark {
+  --bg-color: #1a202c;
+  --text-color: #e2e8f0;
+  --button-bg-color: #2b6cb0;
+  --button-text-color: #ffffff;
+}
+
+/* Light theme */
+.light {
+  --bg-color: #f7fafc;
+  --text-color: #1a202c;
+  --button-bg-color: #48bb78;
+  --button-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
